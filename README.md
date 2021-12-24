@@ -6,6 +6,5 @@ Notes:
 create conf/config.json in bot dir
 
 TODO:
-- add user db
-- implement Dienstplan with @here/@everyone and an embed with: all members(db?); gets randomized and sent daily
 - general purpose bot stuff(???)
+- link white/blacklist(??)

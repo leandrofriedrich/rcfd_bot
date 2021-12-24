@@ -1,12 +1,14 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
-const { clientId, guildId, token } = require('../conf/config.json');
+const { clientId, guildId, token } = require('./config.json');
 
 const commands = [
 	new SlashCommandBuilder().setName('ping').setDescription('Replies with pong!'),
 	new SlashCommandBuilder().setName('server').setDescription('Replies with server info!'),
 	new SlashCommandBuilder().setName('user').setDescription('Replies with user info!'),
+    new SlashCommandBuilder().setName('invite').setDescription('invite Bot'),
+    new SlashCommandBuilder().setName('dienstplan').setDescription('posts dienstplan'),
 ]
 	.map(command => command.toJSON());
 
